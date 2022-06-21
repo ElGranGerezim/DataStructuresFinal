@@ -1,4 +1,9 @@
 # Python Data Structures Tutorial
+## Table of Contents
+1. [Welcome](#i-welcome)
+2. [Queues](#ii-queues)
+3. [Sets](#iii-sets)
+4. [Trees](#iv-trees)
 ## I. Welcome
 * Introduction
 * Contact Information
