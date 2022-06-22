@@ -9,19 +9,19 @@
 * Contact Information
 ## II. Queues
 * Introduction
-* Section 1
-* Section 2
+* Enqueue
+* Dequeue
 * Example
 * Problem to Solve
 ## III. Sets
 * Introduction
-* Section 2
-* Section 2
+* Hashing
+* Add/Remove
 * Example
 * Problem to Solve
 ## IV. Trees
 * Introduction
-* Section 2
-* Section 1
+* Traversing and Inserting
+* Tree Balance
 * Example
 * Problem to Solve
