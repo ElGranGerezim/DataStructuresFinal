@@ -48,7 +48,7 @@ print(myQueue) # 3, 4
 ```
 It is important to note that when we dequeue, **we remove the item from the queue**. This moves every item behind it up one, getting them closer to the front and their turn to be dequeue'd. Because of this, dequeue-ing is a slightly inefficient operation, O(n) where n is the number of items in the queue. This is only true for our list-queues in python however. In other languages with specifically built queues, this operation could be O(1).
 ## Example
-For our example, we're going to write a simple queue manager to help our restaurant staff keep track of who's turn it is to order next. Here's what we need it to do:
+For our example, we're going to write a simple queue manager to help our restaurant staff keep track of whose turn it is to order next. Here's what we need it to do:
 * Employees need to be able to add people's names to the back of the queue as they come in.
 * Employees need to be able to get the name of the next person in line as they're able to take new orders.
 * For testing purposes, we'll want to have a way to see the entire queue as-is without moving anything.

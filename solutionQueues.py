@@ -14,7 +14,7 @@ def getNext(count):
     # Send it back
     return output
 
-def tests():
+def autoTests():
     #Test 1
     print(getNext(2)) # Greg Greg, Mr. Bob
 
@@ -24,5 +24,13 @@ def tests():
     #Test 3
     print(getNext(4)) # Mark Down, P.Y.Thon, Mr Pun, Gregg Greg
 
-#Start our tests.
-tests()
+def manualTest():
+    while True:
+        number = input("How many diplomas did we print?: ")
+        print(getNext(number))
+
+def main():
+
+    autoTests()
+    # Comment the above line and uncomment the one below if you want to play with it yourself
+    # manualTest()
