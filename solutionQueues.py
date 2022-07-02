@@ -3,8 +3,16 @@ GradOrder = ["Greg Greg", "Mr. Bob", "Janet J Jewels", "A Literal Tree", "Mrs Fl
 
 # Gets the next count number of items in our queue
 def getNext(count):
-    # Write your code here!
-    pass
+    # Setup a variable to return later
+    output = []
+
+    # Loop to grab the correct number of items
+    for _ in range(count):
+        # move the first item in GradOrder to our output.
+        output.append(GradOrder.pop(0)) # Don't forget the 0!
+    
+    # Send it back
+    return output
 
 def tests():
     #Test 1

@@ -12,7 +12,7 @@ The normal definition of a queue is ```a line or sequence of people or vehicles 
 The data structure definition is almost exactly the same, except we replace *people or vehicles* with whatever type our data is! 
 
 Our queue can be represented visually like this
-<Insert a picture of a queue>
+![Whiteboard drawing of queues](./queues.png)
 
 In order to be a queue a data structure must follow 2 rules:
 1. Items can only be added to the back, an action called **Enqueue**
