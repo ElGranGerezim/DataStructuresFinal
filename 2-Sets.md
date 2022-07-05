@@ -2,6 +2,7 @@
 ## Table of Contents
 * Introduction
 * Hashing
+* Conflicts
 * Add/Remove
 * Example
 * Practice
@@ -47,5 +48,39 @@ The alternative, chaining, is to put a list of values in each slot with a list, 
 <Insert great graphic>
 Now we know every value would be at its hash index, but just as with open addressing, we've removed our guarantee for O(1) performance, as we need to look through multiple items to tell if something is in the set. 
 In both cases, the solution is come up with a better hash algorithm, so it's impossible for multiple items to have the same hash. This is an ongoing effort, and we will probably never have a perfect hash, but current hash algorithms are complex enough for almost every use.
+
+## Add/Remove
+To create a new set in Python, we need to use a special function, called a `constructor`, which looks like this
+
+```python
+setVariableName = Set()
+```
+
+If we wanted to add or remove something from the set, we use the `add(item)` and `remove(item)` functions respectively.
+```python
+setVariableName.add(10)
+>>>{10}
+setVariableName.remove(10)
+>>>{}
+```
+
+Remember that these two will look for the hash of the item and then add to or clear the spot pertaining to that hash. 
+
+Python also has a special function for determining if something is in a set, `member(item)` checks to see if the item is in the set:
+```python
+setVariableName = {1, 2, 3}
+setVariableName.member(2)
+>>>True
+```
+
+There are also mathematical functions that sets are uniquely suited to perform that Python has built-in functions for.
+```python
+set1 = {1, 2}
+set2 = {2, 3}
+set3 = intersection(set1, set2) #Intersection returns only items in both sets, so in this case 2.
+>>> {2}
+set4 = union(set1, set2) #Union returns a new set with all items in both sets, but without duplicates.
+>>> {1, 2, 3}
+```
 ## Example
 ## Practice

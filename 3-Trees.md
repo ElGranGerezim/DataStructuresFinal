@@ -37,5 +37,6 @@ Finding anything in this tree would be insane. We could balance it like this:
 Now it is much easier to search this BST. There are several different algorithms to balance a tree, and they are all very complicated. Some examples include Red/Black trees and AVL (Adelson-Velskii and Landis) trees. There really is no simple way to balance a tree, so using established and proven methods/algorithms is the best option when working with them.
 
 ## Example
+There is no built in tree type for Python, though there are several libraries that have them. We built a simple one for this example.
 
 ## Practice Problem
