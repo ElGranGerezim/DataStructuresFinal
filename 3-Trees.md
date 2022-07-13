@@ -7,7 +7,7 @@
 
 ## Introduction
 All other data structures we've discussed have had some form of linear progression, each item links only to two other items in the list, the one before and the one after. But what if we changed that, instead of only going forward and backward, we added a third direction? In order to not create circles, which could get us stuck in infinite loops, we'd need to have only one way to go back, so we'll add a second way to go forward. Now every item, called a `node`, has one parent node and can have up to two children nodes, which could look like this:
-![Anatomy of Binary Tree](./images/Anatomy%20of%20Tree.png)
+![Anatomy of Binary Tree](./Images/Anatomy%20of%20Tree.png)
 
 We assume that up is always the parent and left/right are always down in addition to their other directions, and thus children. A node with no parent is called the **root**, and there's only one in every tree. Any node without children is called a **leaf**, and they constitute the end of that particular branch of the tree. Now, what is our rule for *which* node to store our data in?
 
@@ -20,7 +20,7 @@ And now we want to add the number 5. Since it's smaller than 7, it goes to the l
 ![Tree but only 2 element](./Images/Small%20Tree.png)
 
 Insert the number 8, which goes on the right, and we have a nice looking, even tree. But what if we wanted to add the number 6? It's smaller than 7, but larger than 5, so our tree now looks like this:
-![Tree but 4 element](./images/Less%20Small%20Tree.png)
+![Tree but 4 element](./Images/mediumTree.png)
 
 Inserting into a tree is a recursive operation, since we need to keep making comparisons until we find an open spot, somewhere where the node we're on doesn't have any children in the direction we're going. 
 
