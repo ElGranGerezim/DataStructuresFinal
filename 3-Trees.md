@@ -49,4 +49,8 @@ Function | Use
 Our friend Wanda in HR needs some help. She has sign up sheet for a company party that she's had everyone who plans on coming sign, but they're out of order and it's hard for her to figure out if specific people are going or not. We built her [this](./exampleTree.py) Binary Search Tree program to help her organize and search through the names. You can add as many names as you want, in any order that you want, but they'll display alphabetically and is instantly searchable.
 
 ## Practice Problem
-Using a more advanced version of our BST and Node classes you can find [here](./PracticeTree.py),
+Warhammer 40k is a tabletop game where two players build space armies and battle it out in epic sci-fi shootouts. Every unit in an army has a point value, and there are count limits on specific units. In order to be fair, the two armies need to have relatively close point counts, usually within 100 points of each other.
+
+We've stored the two point values of two armies in trees using a more advanced version of our BST and Node classes you can find [here](./PracticeTree.py). Can you finish the code to sum up the total point values of each army and figure out if its a fair fight? Bonus points if you can turn a fair contests into a massacre or vice versa.
+
+You can see our solution [here](./SolutionTrees.py)

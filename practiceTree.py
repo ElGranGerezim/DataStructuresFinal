@@ -81,6 +81,31 @@ class BST:
             yield from self._traverse_backward(node.right)
             yield node.data
             yield from self._traverse_backward(node.left)
+
+    def get_height(self): # Figure out how tall we are, useful for balancing.
+        if self.root is None: # If we have no root, we're nonexistant. 0.
+            return 0
+        else:
+            return self._get_height(self.root)  # Start at the root
+
+    def _get_height(self, node): # Recursive function to figure out how tall we are.
+        # Base case. The height of a tree with only the root is 1.
+        if node.left is None and node.right is None:
+            return 1
+        else:
+            # Assume at the beginning both sides are nonexistnat, even though we know
+            # at least one is because we got this far, we dont know which.
+            left = 0
+            right = 0
+
+            # Validation to make sure we don't try to get the height of a none object
+            if node.left is not None:
+                left = self._get_height(node.left)
+            if node.right is not None:
+                right = self._get_height(node.right)
+
+            # Kickback result.
+            return 1 + max(left, right)
     
     def display(self):
         for item in self:
@@ -104,7 +129,42 @@ def promptChoice():
         else:
             print("invalid choice, not a number")
 
+def setupSpaceMarines():
+    tree = BST()
+    tree.insert(25)
+    tree.insert(10)
+    tree.insert(15)
+    tree.insert(35)
+    tree.insert(5)
+    tree.insert(30)
+    tree.insert(40)
+
+def setupTyranidSwarm():
+    tree = BST()
+    tree.insert(15)
+    tree.insert(10)
+    tree.insert(20)
+    tree.insert(5)
+    tree.insert(7)
+    tree.insert(6)
+    tree.insert(8)
+    tree.insert(11)
+    tree.insert(12)
+    tree.insert(14)
+    tree.insert(3)
+    tree.insert(4)
+    tree.insert(2)
+
+def fair_fight(army1, army2):
+    # Write your code here!
+    return False
+
 def main():
-    pass
+    spaceMarines = setupSpaceMarines()
+    tyranidSwarm = setupTyranidSwarm()
+    if (fair_fight(spaceMarines, tyranidSwarm)):
+        print("This is a fair contest")
+    else:
+        print("No contest! A Massacre!")
     
 main()

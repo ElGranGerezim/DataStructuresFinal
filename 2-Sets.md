@@ -94,13 +94,13 @@ set4 = union(set1, set2) #Union returns a new set with all items in both sets, b
 ## Practice
 Kevin has asked us to add a new feature to his rock collection program to make it easier to trade rocks at rock-swaps. This new feature must do these things:
 * Ask the user what rock to trade away.
-* * If we don't own one, exit and let them know
+  - If we don't own one, exit and let them know
 * Ask the user what rock we want to trade for
-* * If we already have one, exit and let them know.
+  - If we already have one, exit and let them know.
 * If we own both, remove the traded rock and add the one we traded for
-* * Don't forget to say "Trade successful!"
+  - Don't forget to say "Trade successful!"
 * We don't want unnecessary output, so you can't use the buy or sell functions, since they output things unrelated to trade
-* * You're more than welcome to use the own() function though, since it doesn't output anything to the user.
+  - You're more than welcome to use the own() function though, since it doesn't output anything to the user.
 
 Start with an updated version of the above code that has all of the input done for you [Here](./practiceSet.py)
 
